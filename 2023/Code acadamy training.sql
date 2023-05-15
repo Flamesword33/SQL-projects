@@ -27,10 +27,10 @@ SELECT DISTINCT year
 --WHERE is sql's version of if, it restricts the query
 SELECT * 
   FROM movies 
-    WHERE imdb_rating < 5;
+  WHERE imdb_rating < 5;
 SELECT * 
   FROM movies 
-    WHERE year > 2014;
+  WHERE year > 2014;
 
 --part 6
 --LIKE creates a pattern to find. It is a more flexible equals
@@ -38,26 +38,26 @@ SELECT *
 --  _ represents 1 character
 SELECT * 
   FROM movies 
-    WHERE name LIKE 'Se_en';
+  WHERE name LIKE 'Se_en';
 SELECT * 
   FROM movies 
-    WHERE name LIKE "%vatar%";
+  WHERE name LIKE "%vatar%";
 
 --part 7
 --This part teaches the % opperator on LIKE
 SELECT * 
   FROM movies 
-    WHERE name LIKE "%man%";
+  WHERE name LIKE "%man%";
 SELECT * 
   FROM movies 
-    WHERE name LIKE 'The%';
+  WHERE name LIKE 'The%';
 
 --part 8
 --IS NULL returns NULL entries in the query
 --IS NOT NULL returns entries in the query
 SELECT name 
   FROM movies 
-    WHERE imdb_rating IS NULL;
+  WHERE imdb_rating IS NULL;
 
 --part 9
 --BETWEEN a way to combine > and < in one statement that works on numbers and letters. 
@@ -65,22 +65,22 @@ SELECT name
 --  it will return J though.
 SELECT * 
   FROM movies 
-    WHERE name BETWEEN 'D' AND 'G';
+  WHERE name BETWEEN 'D' AND 'G';
 SELECT * 
   FROM movies 
-    WHERE year BETWEEN 1970 and 1979;
+  WHERE year BETWEEN 1970 and 1979;
 
 --part 10
 --AND finds info true to both search parameters
 SELECT *
   FROM movies
-    WHERE year < 1985
-      AND genre = 'horror';
+  WHERE year < 1985
+  AND genre = 'horror';
 
 
 --part 11
 --OR finds all information included in both search parameters
 SELECT *
- FROM movies
- WHERE genre = 'romance'
+  FROM movies
+  WHERE genre = 'romance'
     OR genre = 'comedy';
