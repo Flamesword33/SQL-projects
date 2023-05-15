@@ -28,3 +28,8 @@
 --SELECT * FROM movies WHERE name LIKE 'Se_en';
 --SELECT * FROM movies WHERE name LIKE "%vatar%";
 
+--part 7
+--This part teaches the % opperator on LIKE
+--SELECT * FROM movies WHERE name LIKE "%man%";
+--SELECT * FROM movies WHERE name LIKE 'The%';
+
