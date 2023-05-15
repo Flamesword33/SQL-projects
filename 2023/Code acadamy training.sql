@@ -45,3 +45,11 @@
 --SELECT * FROM movies WHERE name BETWEEN 'D' AND 'G';
 --SELECT * FROM movies WHERE year BETWEEN 1970 and 1979;
 
+--part 10
+--AND finds info true to both search parameters
+/*
+SELECT *
+FROM movies
+WHERE year < 1985
+   AND genre = 'horror';
+*/
