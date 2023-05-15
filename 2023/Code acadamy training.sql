@@ -38,3 +38,10 @@
 --IS NOT NULL returns entries in the query
 --SELECT name FROM movies WHERE imdb_rating IS NULL;
 
+--part 9
+--BETWEEN a way to combine > and < in one statement that works on numbers and letters. 
+--  Note BETWEEN 'A' AND 'J' will return Andy but not Judy, 
+--  it will return J though.
+--SELECT * FROM movies WHERE name BETWEEN 'D' AND 'G';
+--SELECT * FROM movies WHERE year BETWEEN 1970 and 1979;
+
