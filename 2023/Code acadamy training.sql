@@ -78,3 +78,9 @@ SELECT *
       AND genre = 'horror';
 
 
+--part 11
+--OR finds all information included in both search parameters
+SELECT *
+ FROM movies
+ WHERE genre = 'romance'
+    OR genre = 'comedy';
