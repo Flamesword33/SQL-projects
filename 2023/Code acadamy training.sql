@@ -33,3 +33,8 @@
 --SELECT * FROM movies WHERE name LIKE "%man%";
 --SELECT * FROM movies WHERE name LIKE 'The%';
 
+--part 8
+--IS NULL returns NULL entries in the query
+--IS NOT NULL returns entries in the query
+--SELECT name FROM movies WHERE imdb_rating IS NULL;
+
