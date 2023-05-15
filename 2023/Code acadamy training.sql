@@ -21,3 +21,10 @@
 --SELECT * FROM movies WHERE imdb_rating < 5;
 --SELECT * FROM movies WHERE year > 2014;
 
+--part 6
+--LIKE creates a pattern to find. It is a more flexible equals
+--  % represents 0-multiple characters
+--  _ represents 1 character
+--SELECT * FROM movies WHERE name LIKE 'Se_en';
+--SELECT * FROM movies WHERE name LIKE "%vatar%";
+
