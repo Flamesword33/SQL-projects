@@ -11,3 +11,8 @@
 --SELECT name AS "title" FROM movies;
 --SELECT imdb_rating AS 'IMDb' FROM movies;
 
+--part 4
+--DISTINCT removes duplicate entries FROM the results
+--SELECT DISTINCT genre FROM movies;
+--SELECT DISTINCT year FROM movies;
+
