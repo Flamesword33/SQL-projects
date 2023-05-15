@@ -84,3 +84,10 @@ SELECT *
   FROM movies
   WHERE genre = 'romance'
     OR genre = 'comedy';
+
+--part 12
+--ORDER BY sorts the resulting query by a column 
+--  ASC 1-9 and A-Z, DESC 9-1 and Z-A. ASC is default
+SELECT name, year, imdb_rating
+  FROM movies
+  ORDER BY imdb_rating DESC;
