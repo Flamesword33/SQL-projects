@@ -91,3 +91,11 @@ SELECT *
 SELECT name, year, imdb_rating
   FROM movies
   ORDER BY imdb_rating DESC;
+
+--part 13
+--LIMIT reduces the query to x results, 
+--  it always goes at the end of the query
+SELECT * 
+  FROM movies 
+  ORDER BY imdb_rating DESC 
+  LIMIT 3;
