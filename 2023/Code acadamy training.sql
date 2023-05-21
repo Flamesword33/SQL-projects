@@ -24,7 +24,7 @@ SELECT DISTINCT year
   FROM movies;
 
 --part 5
---WHERE is sql's version of if, it restricts the query
+--WHERE restricts the query with a condition
 SELECT * 
   FROM movies 
   WHERE imdb_rating < 5;
