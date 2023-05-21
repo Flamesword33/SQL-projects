@@ -99,3 +99,19 @@ SELECT *
   FROM movies 
   ORDER BY imdb_rating DESC 
   LIMIT 3;
+
+--part 14
+--CASE creates outputs based on inputs, it is used in SELECT, 
+--  it is a direct translation of if then statements
+--WHEN like WHERE but only inside CASE statements
+--THEN proceeds a WHEN statement and gives data to add 
+--ELSE same as else in other languages
+--END ends the CASE statement
+SELECT name, 
+  CASE
+  	WHEN genre = 'romance' THEN 'fun'
+    WHEN genre = 'comedy' THEN 'fun'
+    ELSE 'serious'
+  END AS 'mood'
+
+  FROM movies;
