@@ -1,6 +1,6 @@
 --Lesson 1 Manipulation part 1/10
 --SQL: Structured Query Language
-SELECT *
+
   FROM celebs;
 
 --Lesson 2 Queries part 1/14
