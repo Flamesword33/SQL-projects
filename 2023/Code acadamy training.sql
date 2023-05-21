@@ -5,6 +5,9 @@
 --Relational database: a database of organized information in multiple tables
 --Data types: INTEGER, TEXT, DATE, REAL 
 
+--part 3
+--all statements end with ;
+SELECT * 
   FROM celebs;
 
 --Lesson 2 Queries part 1/14
