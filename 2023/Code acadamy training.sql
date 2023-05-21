@@ -1,6 +1,10 @@
 --Lesson 1 Manipulation part 1/10
 --SQL: Structured Query Language
 
+--part 2
+--Relational database: a database of organized information in multiple tables
+--Data types: INTEGER, TEXT, DATE, REAL 
+
   FROM celebs;
 
 --Lesson 2 Queries part 1/14
