@@ -10,6 +10,14 @@
 SELECT * 
   FROM celebs;
 
+--part 4
+--CREATE TABLE makes a new table
+CREATE TABLE movies(
+  id INTEGER,
+  name TEXT,
+  genre TEXT,
+  year INTEGER);
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
