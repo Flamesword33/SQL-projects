@@ -25,6 +25,12 @@ INSERT INTO movies (
   id, name, genre, year)
   VALUES (32, Spawn, Action, 1997)
 
+--part 6
+--SELECT selects which columns we are querying data from
+--FROM selects which tables to query data from
+SELECT name 
+  FROM movies;
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
