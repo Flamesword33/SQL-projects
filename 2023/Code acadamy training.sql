@@ -18,6 +18,13 @@ CREATE TABLE movies(
   genre TEXT,
   year INTEGER);
 
+--part 5
+--INSERT INTO adds a new row of data into the table
+--VALUES what values to add based on pattern recognition
+INSERT INTO movies (
+  id, name, genre, year)
+  VALUES (32, Spawn, Action, 1997)
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
