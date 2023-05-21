@@ -1,4 +1,9 @@
---Lesson 1 part 1/15
+--Lesson 1 Manipulation part 1/10
+--SQL: Structured Query Language
+SELECT *
+  FROM celebs;
+
+--Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
   FROM movies;
