@@ -180,3 +180,38 @@ SELECT name,
   END AS 'mood'
 
   FROM movies;
+
+--Lesson 3 Aggregate Functions part 1/9
+--COUNT() counts the number of rows
+--SUM() adds the values in a column
+--MIN()/MAX()
+--AVG()
+--ROUND(number_to_round, decimals, operation) unclear what operation means. 
+--  W3 mentions default 0 otherwise it truncates the result to the number of decimals 
+--  Code acadamy list round as having only 2 values.
+
+
+--part 2
+SELECT COUNT(*)
+  FROM fake_apps 
+  WHERE price = 0;
+
+--part 3
+SELECT SUM(downloads)
+  FROM fake_apps;
+
+--part 4
+SELECT MIN(downloads)
+  FROM fake_apps;
+SELECT MAX(price)
+  FROM fake_apps;
+
+--part 5
+SELECT AVG(price)
+  FROM fake_apps;
+
+--part 6
+SELECT ROUND(AVG(price),2) 
+  FROM fake_apps;
+
+--part 7
