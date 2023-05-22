@@ -45,6 +45,11 @@ UPDATE movies
   SET review_score = '5'
     WHERE genre = 'action';
 
+--part 9
+--DELETE FROM deletes rows or tables from the database
+DELETE FROM movies
+  WHERE name IS NULL;
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
