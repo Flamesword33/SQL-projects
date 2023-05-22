@@ -234,3 +234,11 @@ SELECT category, price, AVG(downloads)
   FROM fake_apps
   GROUP BY 1, 2;
 
+--part 9
+--HAVING is WHERE but used after a GROUP BY to work on the new sub datasets
+SELECT price, 
+   ROUND(AVG(downloads)),
+   COUNT(*)
+  FROM fake_apps
+  GROUP BY price
+    HAVING COUNT(*) > 10;
