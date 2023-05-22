@@ -215,3 +215,22 @@ SELECT ROUND(AVG(price),2)
   FROM fake_apps;
 
 --part 7
+--GROUP BY used with aggregate functions, it groups identical data
+--  it comes after SELECT but before ORDER BY OR LIMIT
+--  GROUP BY allows for meaningful return values from aggrigate functions
+SELECT price, COUNT(*) 
+  FROM fake_apps
+  WHERE downloads > 20000
+  GROUP BY price;
+
+SELECT category, SUM(downloads)
+  FROM fake_apps
+  GROUP BY category;
+
+--part 8
+--GROUP BY can also take an integer as a parameter
+--  doing so groups by the x column selected
+SELECT category, price, AVG(downloads)
+  FROM fake_apps
+  GROUP BY 1, 2;
+
