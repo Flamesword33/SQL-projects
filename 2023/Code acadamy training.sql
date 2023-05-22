@@ -38,6 +38,13 @@ SELECT name
 ALTER TABLE movies
   ADD COLUMN review_score INTEGER;
 
+--part 8
+--UPDATE changes a row in the table
+--SET indicates the column to change
+UPDATE movies
+  SET review_score = '5'
+    WHERE genre = 'action';
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
