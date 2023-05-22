@@ -31,6 +31,13 @@ INSERT INTO movies (
 SELECT name 
   FROM movies;
 
+--part 7
+--ALTER TABLE 
+--ADD COLUMN
+--NULL
+ALTER TABLE movies
+  ADD COLUMN review_score INTEGER;
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
