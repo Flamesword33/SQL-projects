@@ -50,6 +50,19 @@ UPDATE movies
 DELETE FROM movies
   WHERE name IS NULL;
 
+--part 10
+--Constraints: made to an initialization statement to auto delete bad data from a table
+--PRIMARY_KEY removes copies in said column, used to uniquly identify the row
+--UNIQUE removes copies in said column
+--NOT NULL removes rows with incomplete information
+--DEFAULT auto fills a default value if no value is present
+CREATE TABLE books(
+  id INTEGER PRIMARY_KEY,
+  title TEXT NOT NULL,
+  author TEXT UNIQUE,
+  rating INTEGER DEFAULT 3
+);
+
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
 SELECT * 
