@@ -194,7 +194,6 @@ SELECT name,
 --  W3 mentions default 0 otherwise it truncates the result to the number of decimals 
 --  Code acadamy list round as having only 2 values.
 
-
 --part 2
 SELECT COUNT(*)
   FROM fake_apps 
