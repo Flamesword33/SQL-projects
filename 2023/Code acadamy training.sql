@@ -247,3 +247,15 @@ SELECT price,
     HAVING COUNT(*) > 10;
 ---------------------------------------------------------------
 
+
+--Lesson 4 Multiple Tables
+--part 1/9
+-- We will be working with the following tables
+--  orders(order_id, customer_id, subscription_id, purchase_date)
+--  subscriptions(subscription_id, description, price_per_month, subscription_length)
+--  customers(customer_id, customer_name, address)
+SELECT customers.customer_id, customer_name, order_id, purchase_date 
+  FROM orders, customers
+  WHERE orders.customer_id = customers.customer_id
+  ORDER BY customers.customer_id;
+
