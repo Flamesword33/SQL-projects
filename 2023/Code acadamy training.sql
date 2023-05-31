@@ -275,3 +275,18 @@ SELECT *
   ON orders.subscription_id = subscriptions.subscription_id
   WHERE description = 'Fashion Magazine';
 
+--part 4
+--INNER JOIN another name for JOIN it removes non-matching information in the ON clause
+--Below I was asked to find the number of people who subscribe to the newspaper, online and both
+SELECT COUNT(id)
+  FROM newspaper;
+
+SELECT COUNT(id)
+  FROM online;
+
+SELECT COUNT(newspaper.id)
+  FROM newspaper
+  JOIN online
+  ON online.first_name = newspaper.first_name
+    AND online.last_name = newspaper.last_name;
+
