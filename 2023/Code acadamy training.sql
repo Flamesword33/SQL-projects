@@ -333,3 +333,15 @@ SELECT month, COUNT(*)
   GROUP BY month;
 
 --part 8
+--UNION adds 2 tables with the same number of columns. The 2 tables require
+--  the same type of data in the same order for this to work.
+--  Does not care about column names
+SELECT *
+  FROM online
+UNION
+SELECT *
+  FROM newspaper
+  ORDER BY first_name;  
+
+--seems to remove repeat entries such as online.id = newspaper.id
+--Good to know, order matters with UNION
