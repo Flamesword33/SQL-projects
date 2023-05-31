@@ -290,3 +290,12 @@ SELECT COUNT(newspaper.id)
   ON online.first_name = newspaper.first_name
     AND online.last_name = newspaper.last_name;
 
+--part 5
+--LEFT JOIN saves unmatched info from the FROM table
+SELECT *
+  FROM newspaper
+  LEFT JOIN online
+  ON newspaper.id = online.id
+  WHERE online.id IS NULL
+  ORDER BY newspaper.first_name;
+
