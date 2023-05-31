@@ -62,6 +62,8 @@ CREATE TABLE books(
   author TEXT UNIQUE,
   rating INTEGER DEFAULT 3
 );
+-------------------------------------------------------------
+
 
 --Lesson 2 Queries part 1/14
 -- The * star character selects everything from the tables given
@@ -180,6 +182,8 @@ SELECT name,
   END AS 'mood'
 
   FROM movies;
+------------------------------------------------------------
+
 
 --Lesson 3 Aggregate Functions part 1/9
 --COUNT() counts the number of rows
@@ -242,3 +246,5 @@ SELECT price,
   FROM fake_apps
   GROUP BY price
     HAVING COUNT(*) > 10;
+---------------------------------------------------------------
+
