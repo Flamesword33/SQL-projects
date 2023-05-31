@@ -264,3 +264,14 @@ SELECT customers.customer_id, customer_name, order_id, purchase_date
 --Just look for matching keys and follow the tables for the information
 --  Far slower then writing a query
 
+--part 3
+--JOIN like FROM but is another table to combine information with
+--ON states what key to match in the multiple tables
+--  Both statements seem to be the same as using FROM on mulitple tables 
+--  and WHERE to limit the information.
+SELECT *
+  FROM orders
+  JOIN subscriptions
+  ON orders.subscription_id = subscriptions.subscription_id
+  WHERE description = 'Fashion Magazine';
+
