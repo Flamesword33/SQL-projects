@@ -259,3 +259,8 @@ SELECT customers.customer_id, customer_name, order_id, purchase_date
   WHERE orders.customer_id = customers.customer_id
   ORDER BY customers.customer_id;
 
+--part 2
+--Manually matching tables -_- gross
+--Just look for matching keys and follow the tables for the information
+--  Far slower then writing a query
+
