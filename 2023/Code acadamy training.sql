@@ -52,7 +52,7 @@ DELETE FROM movies
 
 --part 10
 --Constraints: made to an initialization statement to auto delete bad data from a table
---PRIMARY_KEY removes copies in said column, used to uniquly identify the row
+--PRIMARY_KEY removes copies in said column, used to uniquly identify the row, cannot be NULL
 --UNIQUE removes copies in said column
 --NOT NULL removes rows with incomplete information
 --DEFAULT auto fills a default value if no value is present
@@ -299,3 +299,11 @@ SELECT *
   WHERE online.id IS NULL
   ORDER BY newspaper.first_name;
 
+--part 6
+--PRIMARY KEY unique and not NULL, every table has only 1
+--Foreign key is a primary key in another table
+--  Foreign keys are the simplest ways to join tables
+SELECT *
+  FROM classes
+  INNER JOIN students
+  ON classes.id = students.class_id;
