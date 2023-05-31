@@ -345,3 +345,17 @@ SELECT *
 
 --seems to remove repeat entries such as online.id = newspaper.id
 --Good to know, order matters with UNION
+
+--part 9
+--WITH performs a seperate query and renames the result to a table we name
+--  allows us to use said new table in another query
+WITH previous_query AS (
+  SELECT customer_id,
+      COUNT(subscription_id) AS 'subscriptions'
+    FROM orders
+    GROUP BY customer_id)
+  
+SELECT customers.customer_name, previous_query.subscriptions
+  FROM customers
+  JOIN previous_query
+  ON previous_query.customer_id = customers.customer_id;
