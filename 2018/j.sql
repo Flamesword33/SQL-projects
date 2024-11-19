@@ -1,5 +1,0 @@
-DELETE FROM age 
-WHERE teamid IS NULL;
-
-SELECT * FROM age;
-SELECT * FROM player;
